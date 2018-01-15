@@ -1,0 +1,91 @@
+
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.ios.IOSElement;
+
+public class AppDemo {
+
+	public static void main(String[] args) throws Exception {
+
+		// AppiumDriver
+		IOSDriver<IOSElement> driver;
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("platformName", "iOS");
+		capabilities.setCapability("deviceName", "iPhone 6");
+		capabilities.setCapability("app",
+				"Users/kavitha/Library/Developer/Xcode/DerivedData/UICatalog-ezehahqkectjqyaniijiiofjscvc/Build/Products/Debug-iphonesimulator/UICatalog.app");
+		capabilities.setCapability("automationName", "XCUITest");
+		driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+
+		/**
+		 * Test Actions here...
+		 */
+
+		// Click on Alerts and Enter a text in textbox.
+		/*driver.findElementByAccessibilityId("Alert Views").click();
+		driver.findElementByXPath("//*[@value='Text Entry']").click();
+		driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("Hello");
+		driver.findElementByName("OK").click();
+		driver.navigate().back();*/
+
+		Dimension size = driver.manage().window().getSize(); 
+		int x = size.getWidth() / 2; 
+		System.out.println(x);
+		System.out.println("$$$$$$$$$");
+		int starty = (int) (size.getHeight() * 0.60);
+		System.out.println(starty);
+		System.out.println("$$$$$$$$$");
+		int endy = (int) (size.getHeight() * 0.10);
+		System.out.println(endy);
+		System.out.println("$$$$$$$$$");
+		
+		
+		
+		TouchAction action = new TouchAction(driver);
+		action.press(100, 400);
+		action.moveTo(100, 1000);
+		action.perform().moveTo(100, 2000); //moveTo(options={"x":100,"y":1000})
+	
+		System.out.println("Done");
+
+		/*
+		 * Dimension size = driver.manage().window().getSize(); int x =
+		 * size.getWidth() / 2; int starty = (int) (size.getHeight() * 0.60);
+		 * int endy = (int) (size.getHeight() * 0.10); driver.swipe(x, starty,
+		 * x, endy, 2000);
+		 * 
+		 * Appium::TouchAction.new.press(x: 100, y:
+		 * 500).wait(100).move_to(x:100, y:-200).release.perform
+		 * 
+		 * TouchAction action = new TouchAction(driver);
+		 * action.press(webElement).waitAction(200).moveTo(location.getX()-size.
+		 * getWidth()/2, location.getY()).release().perform();
+		 * 
+		 * Second: TouchAction action = new TouchAction(driver);
+		 * action.press(webElement).waitAction(200).moveTo(location.getX(),
+		 * location.getY()-size.getWidth()/2).release().perform();
+		 */
+
+		// driver.findElementByName("Buttons").click();
+		// driver.manage().timeouts().implicitlyWait(TimeOut, TimeUnit.SECONDS);
+		// MobileElement table =
+		// (MobileElement)driver.findElementById("XCUIElementTypeTable");
+		// int index = 0;
+		// System.out.println(table.getSize());
+		// System.out.println(table.getClass().getName());
+		// WebElement row =
+		// table.findElementsByClassName("XCUIElementTypeCell").get(index);
+		// row.click();
+
+		// driver.quit();
+	}
+}

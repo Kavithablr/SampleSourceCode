@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;net.one97.paytm-3.apk&apos; to &apos;src&apos;&#x0A;- Original project: &apos;paytm&apos;&#x0A;- Destination element: &apos;src&apos;&#x0A;- Original element: &apos;net.one97.paytm-3.apk&apos;" description="Copy file" element1="src/net.one97.paytm-3.apk" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1515512024264" target="/PaytmDemo/src" units="0" version="1.0"/>
+</session>

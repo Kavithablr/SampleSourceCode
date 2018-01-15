@@ -1,0 +1,20 @@
+package com.Obj.Patterns;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.pagefactory.iOSFindBy;
+
+public class HomePage {
+	
+	
+	//FindBy
+	
+	//iOSFindBy
+	
+	//AndroidFindBy
+	
+	@iOSFindBy(xpath="//android.widget.TextView[@text='Preference']")
+	public WebElement Preference;
+	
+
+}
