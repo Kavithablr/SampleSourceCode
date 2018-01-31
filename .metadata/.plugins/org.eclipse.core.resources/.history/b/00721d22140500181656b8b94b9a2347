@@ -1,0 +1,16 @@
+Feature: Attitude Matters
+
+In order to understand Attitude
+As a ITworking guy
+I want to know whom he is wishing
+
+@tester
+Scenario : Employee and greetings
+
+Given I work in late nights
+When i meet watchman
+Then i greet him
+
+Given i work in mornings
+When i meet newspaper boy
+Then i skip Greeting him

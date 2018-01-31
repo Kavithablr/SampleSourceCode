@@ -2,44 +2,50 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="SmokeTests" duration-ms="42" started-at="2018-01-03T16:57:36Z" finished-at="2018-01-03T16:57:36Z">
+  <suite name="Default suite" duration-ms="37" started-at="2018-01-30T03:25:23Z" finished-at="2018-01-30T03:25:23Z">
     <groups>
     </groups>
-    <test name="SampleTests" duration-ms="42" started-at="2018-01-03T16:57:36Z" finished-at="2018-01-03T16:57:36Z">
+    <test name="Default test" duration-ms="37" started-at="2018-01-30T03:25:23Z" finished-at="2018-01-30T03:25:23Z">
       <class name="com.annot.demoOne.AnnotOne">
-        <test-method status="PASS" signature="BeforeTestSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@d2cc05a]" name="BeforeTestSetup" is-config="true" duration-ms="8" started-at="2018-01-03T22:27:36Z" finished-at="2018-01-03T22:27:36Z">
+        <test-method status="PASS" signature="BeforeTestSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@2a2d45ba]" name="BeforeTestSetup" is-config="true" duration-ms="0" started-at="2018-01-30T08:55:23Z" finished-at="2018-01-30T08:55:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTestSetup -->
-        <test-method status="PASS" signature="BaseSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@d2cc05a]" name="BaseSetup" is-config="true" duration-ms="1" started-at="2018-01-03T22:27:36Z" finished-at="2018-01-03T22:27:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BaseSetup -->
-        <test-method status="PASS" signature="AnnotDemoOne()[pri:0, instance:com.annot.demoOne.AnnotOne@d2cc05a]" name="AnnotDemoOne" duration-ms="7" started-at="2018-01-03T22:27:36Z" finished-at="2018-01-03T22:27:36Z">
+        <test-method status="PASS" signature="AnnotDemoOne()[pri:0, instance:com.annot.demoOne.AnnotOne@2a2d45ba]" name="AnnotDemoOne" duration-ms="7" started-at="2018-01-30T08:55:23Z" finished-at="2018-01-30T08:55:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AnnotDemoOne -->
-        <test-method status="PASS" signature="ClearSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@d2cc05a]" name="ClearSetup" is-config="true" duration-ms="0" started-at="2018-01-03T22:27:36Z" finished-at="2018-01-03T22:27:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClearSetup -->
-        <test-method status="PASS" signature="AnnotDemoTwo()[pri:0, instance:com.annot.demoOne.AnnotOne@d2cc05a]" name="AnnotDemoTwo" duration-ms="3" started-at="2018-01-03T22:27:36Z" finished-at="2018-01-03T22:27:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AnnotDemoTwo -->
-        <test-method status="PASS" signature="BaseSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@d2cc05a]" name="BaseSetup" is-config="true" duration-ms="0" started-at="2018-01-03T22:27:36Z" finished-at="2018-01-03T22:27:36Z">
+        <test-method status="PASS" signature="BaseSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@2a2d45ba]" name="BaseSetup" is-config="true" duration-ms="0" started-at="2018-01-30T08:55:23Z" finished-at="2018-01-30T08:55:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BaseSetup -->
-        <test-method status="PASS" signature="ClearSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@d2cc05a]" name="ClearSetup" is-config="true" duration-ms="1" started-at="2018-01-03T22:27:36Z" finished-at="2018-01-03T22:27:36Z">
+        <test-method status="PASS" signature="ClearSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@2a2d45ba]" name="ClearSetup" is-config="true" duration-ms="0" started-at="2018-01-30T08:55:23Z" finished-at="2018-01-30T08:55:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClearSetup -->
-        <test-method status="PASS" signature="AfterTestTearDown()[pri:0, instance:com.annot.demoOne.AnnotOne@d2cc05a]" name="AfterTestTearDown" is-config="true" duration-ms="0" started-at="2018-01-03T22:27:36Z" finished-at="2018-01-03T22:27:36Z">
+        <test-method status="PASS" signature="AnnotDemoTwo()[pri:0, instance:com.annot.demoOne.AnnotOne@2a2d45ba]" name="AnnotDemoTwo" duration-ms="2" started-at="2018-01-30T08:55:23Z" finished-at="2018-01-30T08:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AnnotDemoTwo -->
+        <test-method status="PASS" signature="BaseSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@2a2d45ba]" name="BaseSetup" is-config="true" duration-ms="0" started-at="2018-01-30T08:55:23Z" finished-at="2018-01-30T08:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BaseSetup -->
+        <test-method status="PASS" signature="ClearSetup()[pri:0, instance:com.annot.demoOne.AnnotOne@2a2d45ba]" name="ClearSetup" is-config="true" duration-ms="1" started-at="2018-01-30T08:55:23Z" finished-at="2018-01-30T08:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClearSetup -->
+        <test-method status="PASS" signature="AfterTestTearDown()[pri:0, instance:com.annot.demoOne.AnnotOne@2a2d45ba]" name="AfterTestTearDown" is-config="true" duration-ms="0" started-at="2018-01-30T08:55:23Z" finished-at="2018-01-30T08:55:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTestTearDown -->
       </class> <!-- com.annot.demoOne.AnnotOne -->
-    </test> <!-- SampleTests -->
-  </suite> <!-- SmokeTests -->
+      <class name="com.annot.demoOne.TestSuiteAnnotDemo">
+        <test-method status="PASS" signature="DemoBeforeSuite()[pri:0, instance:com.annot.demoOne.TestSuiteAnnotDemo@7c16905e]" name="DemoBeforeSuite" is-config="true" duration-ms="13" started-at="2018-01-30T08:55:23Z" finished-at="2018-01-30T08:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DemoBeforeSuite -->
+      </class> <!-- com.annot.demoOne.TestSuiteAnnotDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

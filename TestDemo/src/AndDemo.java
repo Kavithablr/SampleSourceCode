@@ -30,21 +30,24 @@ public class AndDemo extends BaseProj {
 		//Syntax
 		//tagName[@attribute=‘value’]
 
-		//HomePage hp = new HomePage(driver);
+		HomePage hp = new HomePage(driver);
 		
 		//to refer to the page object pattern elements, refer to obj.element.action
 		
-		 //hp.Preference.click();
+		hp.Preference.click();
+		//hp.Views.click();
 	    
-		driver.findElementById("android:id/text1").click();
-		/*
+		//driver.findElementById("android:id/text1").click();
+		//driver.findElementById("android:id/text1").click();
+		
 		 driver.findElementByXPath(("//android.widget.TextView[@text='Preference']")).click();
 		 driver.findElementByXPath("//android.widget.TextView[@text='3. Preference dependencies']").click();
-	     driver.findElementById("android:id/checkbox").click();
+	     //driver.findElementById("android:id/checkbox").click();
+	     hp.prefCheckbox.click();
 	     driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
 	     driver.findElementByClassName("android.widget.EditText").sendKeys("hello");
 	     driver.findElementsByClassName("android.widget.Button").get(1).click();
-	     */
+	     
 	    
 		
 	}

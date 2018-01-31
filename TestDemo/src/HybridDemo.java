@@ -18,8 +18,8 @@ public class HybridDemo {
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME,MobilePlatform.ANDROID);
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME,"Android Device"); //to run on the device 
-		//cap.setCapability(MobileCapabilityType.DEVICE_NAME, "MyDevice");
+		//cap.setCapability(MobileCapabilityType.DEVICE_NAME,"Android Device"); //to run on the device 
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "AppDev");
 		cap.setCapability(MobileCapabilityType.APP, "/Users/kavitha/Documents/Haiburoido hybrid test app_v1.3_apkpure.com.apk");
 		cap.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
 		//cap.setCapability("deviceName", "AndroidEmulator");

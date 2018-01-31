@@ -23,9 +23,12 @@ public class UIAutomatorTests extends BaseProj{
 		//Syntax
 		//("attribute(\"value\")")
 		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
-		
+		driver.navigate().back();
+		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
+			
 		//Verify attribute
 	     System.out.println(driver.findElementsByAndroidUIAutomator("new UiSelector().enabled(true)").size());
+	     System.out.println(driver.findElementsByAndroidUIAutomator("new UiSelector().focused(false)").size());
 
 	     //Get all the text values of enabled properties
 	     

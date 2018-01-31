@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;HomePage.java&apos; to &apos;OnlineBank/src/main/java/(default package)&apos;&#x0A;- Original project: &apos;TestDemo&apos;&#x0A;- Destination element: &apos;OnlineBank/src/main/java/(default package)&apos;&#x0A;- Original element: &apos;com.Obj.Patterns.HomePage.java&apos;" description="Copy compilation unit" destination="=OnlineBank/src\/main\/java&lt;" element1="/src&lt;com.Obj.Patterns{HomePage.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1517376931432" units="1" version="1.0"/>
+</session>

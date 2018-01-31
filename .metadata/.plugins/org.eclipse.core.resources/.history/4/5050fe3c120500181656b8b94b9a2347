@@ -1,0 +1,10 @@
+@tester
+Scenario : Employee and greetings
+
+Given I work in late nights
+when i meet watchman
+then i greet him
+
+Given i work in mornings
+When i meet newspaper boy
+Then i skip Greeting him

@@ -1,0 +1,54 @@
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class JsonDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		JSONObject jsonobj = getDataFile("SampleData.json");
+	}
+
+	public Object[][] getTestScenarios(String dataFileName, String testCaseName) {
+	    JSONArray testCase = (JSONArray) getDataFile(dataFileName).get(testCaseName);
+	    List<JSONObject> testScenarioArray = new ArrayList<JSONObject>();
+
+	    for (int i = 0; i < testCase.size(); i++) {
+	         testScenarioArray.add((JSONObject) testCase.get(i));
+	    }
+
+	    Object[][] dataProviderArray = new Object[testScenarioArray.size()][];
+	    for (int scenario = 0; scenario < testScenarioArray.size(); scenario++) {
+	        String scenarioName = null;
+
+	        if ((String) testScenarioArray.get(scenario).get("scenario") != null) {
+	            scenarioName = (String) testScenarioArray.get(scenario).get("scenario");
+	        } else {
+	            scenarioName = "No scenario name specified";
+	        };
+	        dataProviderArray[scenario] = new Object[] { scenarioName, (JSONObject) testScenarioArray.get(scenario) };
+	    }
+	    return dataProviderArray;
+	}
+	
+	
+	public static JSONObject getDataFile(String dataFileName) {
+	    String dataFilePath = "src/";
+	    JSONObject testObject = null; 
+	    try {
+	        FileReader reader = new FileReader(dataFilePath + dataFileName);                        
+	        JSONParser jsonParser = new JSONParser();
+	        JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
+	        testObject = (JSONObject) jsonObject;
+	    } catch (Exception ex) {
+	        ex.printStackTrace();
+	    }
+	    return testObject;
+	}
+	
+}

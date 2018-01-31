@@ -1,0 +1,13 @@
+import org.testng.annotations.Test;
+
+public class DemoOne {
+
+	
+	
+	@Test
+	public void DemoTest(){
+		System.out.println("This is maven demo");
+	}
+	
+	
+}

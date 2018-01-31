@@ -4,10 +4,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="CCDept"/>
 		</list>
 		<list key="name">
+			<item value="BankingApp"/>
 		</list>
 		<list key="artifactId">
+			<item value="OnlineBank"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -70,13 +73,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.AppNative.HybridDemo"/>
 		</list>
 		<list key="groupId">
-			<item value="AppNative"/>
 		</list>
 		<list key="artifactId">
-			<item value="HybridDemo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

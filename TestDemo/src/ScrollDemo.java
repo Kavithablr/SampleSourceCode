@@ -15,7 +15,9 @@ public class ScrollDemo extends BaseProj{
 		
 		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
 		
-		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));");
+		//scroll and click
+		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Tabs\"));").click();
+		
 		
 
 	}
